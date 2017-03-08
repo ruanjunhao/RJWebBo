@@ -7,8 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E0011F4B4BF1CF1F77C1B28 /* Pods_RJWeiBo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 078F4BC020DFCABA7E9B97AE /* Pods_RJWeiBo.framework */; };
+		8B34BE681E6ED4AA001CCBD0 /* QorumLogs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B34BE671E6ED4AA001CCBD0 /* QorumLogs.swift */; };
+		8B34BE911E6ED4B8001CCBD0 /* NSDate-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B34BE8E1E6ED4B8001CCBD0 /* NSDate-Extension.swift */; };
+		8B34BE921E6ED4B8001CCBD0 /* UIBarButtonItem-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B34BE8F1E6ED4B8001CCBD0 /* UIBarButtonItem-Extension.swift */; };
+		8B34BE931E6ED4B8001CCBD0 /* UIColor-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B34BE901E6ED4B8001CCBD0 /* UIColor-Extension.swift */; };
+		8B34BE961E6ED5A4001CCBD0 /* OAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B34BE941E6ED5A4001CCBD0 /* OAuthViewController.swift */; };
+		8B34BE971E6ED5A4001CCBD0 /* OAuthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B34BE951E6ED5A4001CCBD0 /* OAuthViewController.xib */; };
+		8B34BE991E6ED9CB001CCBD0 /* RJNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B34BE981E6ED9CB001CCBD0 /* RJNavigationController.swift */; };
+		8B34BE9B1E6EDA54001CCBD0 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B34BE9A1E6EDA54001CCBD0 /* Common.swift */; };
+		8B34BE9D1E6EDCB2001CCBD0 /* RJProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B34BE9C1E6EDCB2001CCBD0 /* RJProgressHUD.swift */; };
+		8B34BE9F1E6EE77A001CCBD0 /* NetworkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B34BE9E1E6EE77A001CCBD0 /* NetworkTool.swift */; };
 		8BA69AF51E6E96E800FCF440 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA69AF41E6E96E800FCF440 /* AppDelegate.swift */; };
-		8BA69AF71E6E96E800FCF440 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA69AF61E6E96E800FCF440 /* ViewController.swift */; };
 		8BA69AFA1E6E96E800FCF440 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BA69AF81E6E96E800FCF440 /* Main.storyboard */; };
 		8BA69AFC1E6E96E800FCF440 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BA69AFB1E6E96E800FCF440 /* Assets.xcassets */; };
 		8BA69AFF1E6E96E800FCF440 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BA69AFD1E6E96E800FCF440 /* LaunchScreen.storyboard */; };
@@ -34,9 +44,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		078F4BC020DFCABA7E9B97AE /* Pods_RJWeiBo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RJWeiBo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		296D0D1D65FA9F57F05527F6 /* Pods-RJWeiBo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RJWeiBo.release.xcconfig"; path = "Pods/Target Support Files/Pods-RJWeiBo/Pods-RJWeiBo.release.xcconfig"; sourceTree = "<group>"; };
+		8B34BE671E6ED4AA001CCBD0 /* QorumLogs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QorumLogs.swift; sourceTree = "<group>"; };
+		8B34BE8E1E6ED4B8001CCBD0 /* NSDate-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate-Extension.swift"; sourceTree = "<group>"; };
+		8B34BE8F1E6ED4B8001CCBD0 /* UIBarButtonItem-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem-Extension.swift"; sourceTree = "<group>"; };
+		8B34BE901E6ED4B8001CCBD0 /* UIColor-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor-Extension.swift"; sourceTree = "<group>"; };
+		8B34BE941E6ED5A4001CCBD0 /* OAuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OAuthViewController.swift; sourceTree = "<group>"; };
+		8B34BE951E6ED5A4001CCBD0 /* OAuthViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OAuthViewController.xib; sourceTree = "<group>"; };
+		8B34BE981E6ED9CB001CCBD0 /* RJNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RJNavigationController.swift; sourceTree = "<group>"; };
+		8B34BE9A1E6EDA54001CCBD0 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		8B34BE9C1E6EDCB2001CCBD0 /* RJProgressHUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RJProgressHUD.swift; sourceTree = "<group>"; };
+		8B34BE9E1E6EE77A001CCBD0 /* NetworkTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkTool.swift; sourceTree = "<group>"; };
 		8BA69AF11E6E96E800FCF440 /* RJWeiBo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RJWeiBo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BA69AF41E6E96E800FCF440 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8BA69AF61E6E96E800FCF440 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8BA69AF91E6E96E800FCF440 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8BA69AFB1E6E96E800FCF440 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8BA69AFE1E6E96E800FCF440 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +68,7 @@
 		8BA69B101E6E96E800FCF440 /* RJWeiBoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RJWeiBoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BA69B141E6E96E800FCF440 /* RJWeiBoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RJWeiBoUITests.swift; sourceTree = "<group>"; };
 		8BA69B161E6E96E800FCF440 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5E2E3D54D415DE6918E165E /* Pods-RJWeiBo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RJWeiBo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RJWeiBo/Pods-RJWeiBo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E0011F4B4BF1CF1F77C1B28 /* Pods_RJWeiBo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +97,311 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		156B0C70567B363A587AE237 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				078F4BC020DFCABA7E9B97AE /* Pods_RJWeiBo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8B34BDF61E6ED41B001CCBD0 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				8B34BE781E6ED4B8001CCBD0 /* Main */,
+				8B34BE691E6ED4B8001CCBD0 /* Compose */,
+				8B34BE6E1E6ED4B8001CCBD0 /* Discover */,
+				8B34BE731E6ED4B8001CCBD0 /* Home */,
+				8B34BE7D1E6ED4B8001CCBD0 /* Message */,
+				8B34BE821E6ED4B8001CCBD0 /* OAuth */,
+				8B34BE871E6ED4B8001CCBD0 /* Profile */,
+				8B34BE8C1E6ED4B8001CCBD0 /* Tools */,
+				8B34BE661E6ED4AA001CCBD0 /* Lib */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		8B34BE661E6ED4AA001CCBD0 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				8B34BE671E6ED4AA001CCBD0 /* QorumLogs.swift */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		8B34BE691E6ED4B8001CCBD0 /* Compose */ = {
+			isa = PBXGroup;
+			children = (
+				8B34BE6A1E6ED4B8001CCBD0 /* Controller */,
+				8B34BE6B1E6ED4B8001CCBD0 /* Model */,
+				8B34BE6C1E6ED4B8001CCBD0 /* View */,
+				8B34BE6D1E6ED4B8001CCBD0 /* ViewModel */,
+			);
+			path = Compose;
+			sourceTree = "<group>";
+		};
+		8B34BE6A1E6ED4B8001CCBD0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8B34BE6B1E6ED4B8001CCBD0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8B34BE6C1E6ED4B8001CCBD0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8B34BE6D1E6ED4B8001CCBD0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8B34BE6E1E6ED4B8001CCBD0 /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				8B34BE6F1E6ED4B8001CCBD0 /* Controller */,
+				8B34BE701E6ED4B8001CCBD0 /* Model */,
+				8B34BE711E6ED4B8001CCBD0 /* View */,
+				8B34BE721E6ED4B8001CCBD0 /* ViewModel */,
+			);
+			path = Discover;
+			sourceTree = "<group>";
+		};
+		8B34BE6F1E6ED4B8001CCBD0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8B34BE701E6ED4B8001CCBD0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8B34BE711E6ED4B8001CCBD0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8B34BE721E6ED4B8001CCBD0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8B34BE731E6ED4B8001CCBD0 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				8B34BE741E6ED4B8001CCBD0 /* Controller */,
+				8B34BE751E6ED4B8001CCBD0 /* Model */,
+				8B34BE761E6ED4B8001CCBD0 /* View */,
+				8B34BE771E6ED4B8001CCBD0 /* ViewModel */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		8B34BE741E6ED4B8001CCBD0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8B34BE751E6ED4B8001CCBD0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8B34BE761E6ED4B8001CCBD0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8B34BE771E6ED4B8001CCBD0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8B34BE781E6ED4B8001CCBD0 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				8B34BE791E6ED4B8001CCBD0 /* Controller */,
+				8B34BE7A1E6ED4B8001CCBD0 /* Model */,
+				8B34BE7B1E6ED4B8001CCBD0 /* View */,
+				8B34BE7C1E6ED4B8001CCBD0 /* ViewModel */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		8B34BE791E6ED4B8001CCBD0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8B34BE981E6ED9CB001CCBD0 /* RJNavigationController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8B34BE7A1E6ED4B8001CCBD0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8B34BE7B1E6ED4B8001CCBD0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8B34BE7C1E6ED4B8001CCBD0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8B34BE7D1E6ED4B8001CCBD0 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				8B34BE7E1E6ED4B8001CCBD0 /* Controller */,
+				8B34BE7F1E6ED4B8001CCBD0 /* Model */,
+				8B34BE801E6ED4B8001CCBD0 /* View */,
+				8B34BE811E6ED4B8001CCBD0 /* ViewModel */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		8B34BE7E1E6ED4B8001CCBD0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8B34BE7F1E6ED4B8001CCBD0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8B34BE801E6ED4B8001CCBD0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8B34BE811E6ED4B8001CCBD0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8B34BE821E6ED4B8001CCBD0 /* OAuth */ = {
+			isa = PBXGroup;
+			children = (
+				8B34BE831E6ED4B8001CCBD0 /* Controller */,
+			);
+			path = OAuth;
+			sourceTree = "<group>";
+		};
+		8B34BE831E6ED4B8001CCBD0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8B34BE941E6ED5A4001CCBD0 /* OAuthViewController.swift */,
+				8B34BE951E6ED5A4001CCBD0 /* OAuthViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8B34BE871E6ED4B8001CCBD0 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				8B34BE881E6ED4B8001CCBD0 /* Controller */,
+				8B34BE891E6ED4B8001CCBD0 /* Model */,
+				8B34BE8A1E6ED4B8001CCBD0 /* View */,
+				8B34BE8B1E6ED4B8001CCBD0 /* ViewModel */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		8B34BE881E6ED4B8001CCBD0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8B34BE891E6ED4B8001CCBD0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8B34BE8A1E6ED4B8001CCBD0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8B34BE8B1E6ED4B8001CCBD0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8B34BE8C1E6ED4B8001CCBD0 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				8B34BE8D1E6ED4B8001CCBD0 /* Extension */,
+				8B34BE9A1E6EDA54001CCBD0 /* Common.swift */,
+				8B34BE9C1E6EDCB2001CCBD0 /* RJProgressHUD.swift */,
+				8B34BE9E1E6EE77A001CCBD0 /* NetworkTool.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		8B34BE8D1E6ED4B8001CCBD0 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				8B34BE8E1E6ED4B8001CCBD0 /* NSDate-Extension.swift */,
+				8B34BE8F1E6ED4B8001CCBD0 /* UIBarButtonItem-Extension.swift */,
+				8B34BE901E6ED4B8001CCBD0 /* UIColor-Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		8BA69AE81E6E96E800FCF440 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +409,8 @@
 				8BA69B081E6E96E800FCF440 /* RJWeiBoTests */,
 				8BA69B131E6E96E800FCF440 /* RJWeiBoUITests */,
 				8BA69AF21E6E96E800FCF440 /* Products */,
+				9B07673D1C2A8D26C50689EF /* Pods */,
+				156B0C70567B363A587AE237 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,8 +427,8 @@
 		8BA69AF31E6E96E800FCF440 /* RJWeiBo */ = {
 			isa = PBXGroup;
 			children = (
+				8B34BDF61E6ED41B001CCBD0 /* Classes */,
 				8BA69AF41E6E96E800FCF440 /* AppDelegate.swift */,
-				8BA69AF61E6E96E800FCF440 /* ViewController.swift */,
 				8BA69AF81E6E96E800FCF440 /* Main.storyboard */,
 				8BA69AFB1E6E96E800FCF440 /* Assets.xcassets */,
 				8BA69AFD1E6E96E800FCF440 /* LaunchScreen.storyboard */,
@@ -125,6 +455,15 @@
 			path = RJWeiBoUITests;
 			sourceTree = "<group>";
 		};
+		9B07673D1C2A8D26C50689EF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E5E2E3D54D415DE6918E165E /* Pods-RJWeiBo.debug.xcconfig */,
+				296D0D1D65FA9F57F05527F6 /* Pods-RJWeiBo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +471,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8BA69B191E6E96E800FCF440 /* Build configuration list for PBXNativeTarget "RJWeiBo" */;
 			buildPhases = (
+				223D98AC1A8F3185B15E142C /* [CP] Check Pods Manifest.lock */,
 				8BA69AED1E6E96E800FCF440 /* Sources */,
 				8BA69AEE1E6E96E800FCF440 /* Frameworks */,
 				8BA69AEF1E6E96E800FCF440 /* Resources */,
+				98A0DFECF071B9BD646449E6 /* [CP] Embed Pods Frameworks */,
+				1494D260862F7D5D29D276EC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -193,7 +535,8 @@
 				TargetAttributes = {
 					8BA69AF01E6E96E800FCF440 = {
 						CreatedOnToolsVersion = 8.2.1;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = 4S6656AKC4;
+						ProvisioningStyle = Manual;
 					};
 					8BA69B041E6E96E800FCF440 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -232,6 +575,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B34BE971E6ED5A4001CCBD0 /* OAuthViewController.xib in Resources */,
 				8BA69AFF1E6E96E800FCF440 /* LaunchScreen.storyboard in Resources */,
 				8BA69AFC1E6E96E800FCF440 /* Assets.xcassets in Resources */,
 				8BA69AFA1E6E96E800FCF440 /* Main.storyboard in Resources */,
@@ -254,13 +598,69 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1494D260862F7D5D29D276EC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RJWeiBo/Pods-RJWeiBo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		223D98AC1A8F3185B15E142C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		98A0DFECF071B9BD646449E6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RJWeiBo/Pods-RJWeiBo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8BA69AED1E6E96E800FCF440 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8BA69AF71E6E96E800FCF440 /* ViewController.swift in Sources */,
+				8B34BE9B1E6EDA54001CCBD0 /* Common.swift in Sources */,
+				8B34BE961E6ED5A4001CCBD0 /* OAuthViewController.swift in Sources */,
+				8B34BE9F1E6EE77A001CCBD0 /* NetworkTool.swift in Sources */,
+				8B34BE9D1E6EDCB2001CCBD0 /* RJProgressHUD.swift in Sources */,
+				8B34BE921E6ED4B8001CCBD0 /* UIBarButtonItem-Extension.swift in Sources */,
+				8B34BE931E6ED4B8001CCBD0 /* UIColor-Extension.swift in Sources */,
 				8BA69AF51E6E96E800FCF440 /* AppDelegate.swift in Sources */,
+				8B34BE911E6ED4B8001CCBD0 /* NSDate-Extension.swift in Sources */,
+				8B34BE991E6ED9CB001CCBD0 /* RJNavigationController.swift in Sources */,
+				8B34BE681E6ED4AA001CCBD0 /* QorumLogs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,24 +808,32 @@
 		};
 		8BA69B1A1E6E96E800FCF440 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5E2E3D54D415DE6918E165E /* Pods-RJWeiBo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4S6656AKC4;
 				INFOPLIST_FILE = RJWeiBo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = www.zuihuibao.cn.RJWeiBo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "44570426-8028-4c37-868c-21cde2cd1d1b";
+				PROVISIONING_PROFILE_SPECIFIER = develop_allruan;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		8BA69B1B1E6E96E800FCF440 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 296D0D1D65FA9F57F05527F6 /* Pods-RJWeiBo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4S6656AKC4;
 				INFOPLIST_FILE = RJWeiBo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = www.zuihuibao.cn.RJWeiBo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "44570426-8028-4c37-868c-21cde2cd1d1b";
+				PROVISIONING_PROFILE_SPECIFIER = develop_allruan;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -503,6 +911,7 @@
 				8BA69B1B1E6E96E800FCF440 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8BA69B1C1E6E96E800FCF440 /* Build configuration list for PBXNativeTarget "RJWeiBoTests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +920,7 @@
 				8BA69B1E1E6E96E800FCF440 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8BA69B1F1E6E96E800FCF440 /* Build configuration list for PBXNativeTarget "RJWeiBoUITests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +929,7 @@
 				8BA69B211E6E96E800FCF440 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
