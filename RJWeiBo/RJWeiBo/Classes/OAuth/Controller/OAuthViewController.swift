@@ -21,6 +21,7 @@ class OAuthViewController: UIViewController {
         
         //加载网页
         loadPage()
+        title = "授权登录"
     }
 
 
@@ -81,7 +82,18 @@ extension OAuthViewController : UIWebViewDelegate {
         
         if let returncode = code {
             // 5.请求accessToken
-            loadAccessToken(returncode)
+            
+            UserAccountViewModel.shareInstance.loadAccessToken(code: returncode, finished: { (isSuccessed) in
+                
+                if isSuccessed {
+                    //更新根控制
+                    let main =  UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController()
+                    UIApplication.shared.keyWindow?.rootViewController = main
+                }else {
+                    RJProgressHUD.showErrorWithStatus("登录异常")
+                }
+                
+            })
             return false
         }
         
@@ -89,86 +101,86 @@ extension OAuthViewController : UIWebViewDelegate {
         
         
     }
-    
-    func loadAccessToken(_ code : String)  {
-        
-        
-        let urlString = "\(BASE_URL)oauth2/access_token"
-        
-        // 2.获取请求的参数
-        let parameters = ["client_id" : app_key, "client_secret" : app_secret, "grant_type" : "authorization_code", "redirect_uri" : redirect_uri, "code" : code]
-        
-        NetworkTools.shareNetworkTool.post(urlString, parameters: parameters) { (json, error) in
-            
-            if  error != nil  {
-                RJProgressHUD.showErrorWithStatus((error?.localizedDescription)!)
-                return
-            }
-            
-            guard  let accountDict = json as? [String : AnyObject] else {
-                RJProgressHUD.showErrorWithStatus("返回数据为空")
-                return
-            }
-            
-            let account = UserAccount(dict: accountDict)
-            //
-            QL1("accountDict__\(accountDict)")
-            
-           self.loadUserInfo(account)
- 
-        }
-
-        
-    }
-    
-    
-    //请求用户信息
-    fileprivate func loadUserInfo(_ account : UserAccount) {
-        
-        guard let accessToken = account.access_token else {
-            return;
-        }
-        
-        // 2.获取uid
-        guard let uid = account.uid else {
-            return
-        }
-        
-        let urlString = "\(BASE_URL)2/users/show.json"
-        
-        // 2.获取请求的参数
-        let parameters = ["access_token" : accessToken, "uid" : uid]
-        
-        NetworkTools.shareNetworkTool.post(urlString, parameters: parameters) { (json, error ) in
-            
-            if error != nil  {
-                QL4("error__\(error)")
-                return
-            }
-            
-            //拿到用户信息结果
-            guard let userDictJson = json else {
-                return
-            }
-            let userJSON = JSON(userDictJson)
-            account.screen_name = userJSON["screen_name"].string
-            account.avatar_large = userJSON["avatar_large"].string
-            
-            //保存account对象保存
-            NSKeyedArchiver.archiveRootObject(account, toFile: UserAccountViewModel.shareInstance.accountPatch)
-            //将account对象保存到单例中
-            UserAccountViewModel.shareInstance.account = account
-            
-            
-            //更新根控制
-            let main =  UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController()
-            UIApplication.shared.keyWindow?.rootViewController = main
-
-        }
-        
-        
-        
-    }
+//    
+//    func loadAccessToken(_ code : String)  {
+//        
+//        
+//        let urlString = "\(BASE_URL)oauth2/access_token"
+//        
+//        // 2.获取请求的参数
+//        let parameters = ["client_id" : app_key, "client_secret" : app_secret, "grant_type" : "authorization_code", "redirect_uri" : redirect_uri, "code" : code]
+//        
+//        NetworkTools.shareNetworkTool.post(urlString, parameters: parameters) { (json, error) in
+//            
+//            if  error != nil  {
+//                RJProgressHUD.showErrorWithStatus((error?.localizedDescription)!)
+//                return
+//            }
+//            
+//            guard  let accountDict = json as? [String : AnyObject] else {
+//                RJProgressHUD.showErrorWithStatus("返回数据为空")
+//                return
+//            }
+//            
+//            let account = UserAccount(dict: accountDict)
+//            //
+//            QL1("accountDict__\(accountDict)")
+//            
+//           self.loadUserInfo(account)
+// 
+//        }
+//
+//        
+//    }
+//    
+//    
+//    //请求用户信息
+//    fileprivate func loadUserInfo(_ account : UserAccount) {
+//        
+//        guard let accessToken = account.access_token else {
+//            return;
+//        }
+//        
+//        // 2.获取uid
+//        guard let uid = account.uid else {
+//            return
+//        }
+//        
+//        let urlString = "\(BASE_URL)2/users/show.json"
+//        
+//        // 2.获取请求的参数
+//        let parameters = ["access_token" : accessToken, "uid" : uid]
+//        
+//        NetworkTools.shareNetworkTool.post(urlString, parameters: parameters) { (json, error ) in
+//            
+//            if error != nil  {
+//                QL4("error__\(error)")
+//                return
+//            }
+//            
+//            //拿到用户信息结果
+//            guard let userDictJson = json else {
+//                return
+//            }
+//            let userJSON = JSON(userDictJson)
+//            account.screen_name = userJSON["screen_name"].string
+//            account.avatar_large = userJSON["avatar_large"].string
+//            
+//            //保存account对象保存
+//            NSKeyedArchiver.archiveRootObject(account, toFile: UserAccountViewModel.shareInstance.accountPatch)
+//            //将account对象保存到单例中
+//            UserAccountViewModel.shareInstance.account = account
+//            
+//            
+//            //更新根控制
+//            let main =  UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController()
+//            UIApplication.shared.keyWindow?.rootViewController = main
+//
+//        }
+//        
+//        
+//        
+//    }
     
     
 }

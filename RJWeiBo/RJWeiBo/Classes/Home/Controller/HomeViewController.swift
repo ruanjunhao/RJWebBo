@@ -11,12 +11,19 @@ import UIKit
 class HomeViewController: UIViewController {
 
     
+    fileprivate lazy var popoverAnimator : PopoverAnimator = PopoverAnimator { [weak self]
+        (present) in
+        self?.titleButton.isSelected = present;
+        
+    }
+    
     fileprivate lazy var titleButton : TitleButton = TitleButton()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         setupNavigationBar()
+        
+        //automaticallyAdjustsScrollViewInsets = false
         
         // Do any additional setup after loading the view.
     }
@@ -53,6 +60,9 @@ extension HomeViewController {
         
         //设置控制器的modal的样式
         popV.modalPresentationStyle = .custom
+        popV.transitioningDelegate = popoverAnimator
+        let x = (self.view.bounds.width - 180) * 0.5
+        popoverAnimator.presentedFrame = CGRect(x: x, y: 56, width: 180, height: 250)
         present(popV, animated: true, completion: nil)
         
     }

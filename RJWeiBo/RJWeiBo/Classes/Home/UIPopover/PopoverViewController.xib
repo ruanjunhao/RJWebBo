@@ -22,20 +22,19 @@
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="popover_background" translatesAutoresizingMaskIntoConstraints="NO" id="rTn-RN-KMV">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                 </imageView>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="DCx-cS-9l2">
-                    <rect key="frame" x="20" y="20" width="335" height="627"/>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="pJp-T8-SfI">
+                    <rect key="frame" x="15" y="15" width="345" height="637"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </tableView>
             </subviews>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="DCx-cS-9l2" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="2dj-jo-mGL"/>
+                <constraint firstItem="pJp-T8-SfI" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="8I7-4H-Mv6"/>
                 <constraint firstItem="rTn-RN-KMV" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="HH0-PY-bSE"/>
-                <constraint firstAttribute="trailing" secondItem="DCx-cS-9l2" secondAttribute="trailing" constant="20" id="KGq-qI-1Mb"/>
+                <constraint firstAttribute="bottom" secondItem="pJp-T8-SfI" secondAttribute="bottom" constant="15" id="KC7-W9-cTa"/>
                 <constraint firstAttribute="trailing" secondItem="rTn-RN-KMV" secondAttribute="trailing" id="TOc-R7-hSm"/>
-                <constraint firstItem="DCx-cS-9l2" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="XJQ-5B-r9h"/>
+                <constraint firstItem="pJp-T8-SfI" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="15" id="pTz-Jh-fiY"/>
+                <constraint firstAttribute="trailing" secondItem="pJp-T8-SfI" secondAttribute="trailing" constant="15" id="qU4-DO-45n"/>
                 <constraint firstAttribute="bottom" secondItem="rTn-RN-KMV" secondAttribute="bottom" id="x9s-6X-u9E"/>
-                <constraint firstAttribute="bottom" secondItem="DCx-cS-9l2" secondAttribute="bottom" constant="20" id="zGV-hF-oKT"/>
                 <constraint firstItem="rTn-RN-KMV" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="zPz-UI-xjp"/>
             </constraints>
         </view>

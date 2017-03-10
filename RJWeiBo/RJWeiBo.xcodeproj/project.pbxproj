@@ -46,6 +46,7 @@
 		8BCBA1981E70F42E00976A16 /* Discover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BCBA1961E70F42E00976A16 /* Discover.storyboard */; };
 		8BCBA19E1E70F47600976A16 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BCBA19C1E70F47600976A16 /* Profile.storyboard */; };
 		8BCBA1A01E70FF2300976A16 /* UIButton-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCBA19F1E70FF2300976A16 /* UIButton-Extension.swift */; };
+		8BEFEEC91E724A7000CA6AFC /* RJPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BEFEEC81E724A7000CA6AFC /* RJPresentationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,6 +113,7 @@
 		8BCBA1971E70F42E00976A16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Discover.storyboard; sourceTree = "<group>"; };
 		8BCBA19D1E70F47600976A16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Profile.storyboard; sourceTree = "<group>"; };
 		8BCBA19F1E70FF2300976A16 /* UIButton-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton-Extension.swift"; sourceTree = "<group>"; };
+		8BEFEEC81E724A7000CA6AFC /* RJPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RJPresentationController.swift; sourceTree = "<group>"; };
 		E5E2E3D54D415DE6918E165E /* Pods-RJWeiBo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RJWeiBo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RJWeiBo/Pods-RJWeiBo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -538,6 +540,7 @@
 		8BC8C2A91E715A0300A840EE /* UIPopover */ = {
 			isa = PBXGroup;
 			children = (
+				8BEFEEC81E724A7000CA6AFC /* RJPresentationController.swift */,
 				8BC8C2AA1E715A1600A840EE /* PopoverViewController.swift */,
 				8BC8C2AB1E715A1600A840EE /* PopoverViewController.xib */,
 				8BC8C2AE1E715D5200A840EE /* PopoverAnimator.swift */,
@@ -767,6 +770,7 @@
 				8BC8C2A41E714ECC00A840EE /* Status.swift in Sources */,
 				8B34BE911E6ED4B8001CCBD0 /* NSDate-Extension.swift in Sources */,
 				8B34BEA71E6F9EB4001CCBD0 /* UserAccountViewModel.swift in Sources */,
+				8BEFEEC91E724A7000CA6AFC /* RJPresentationController.swift in Sources */,
 				8BC8C2AF1E715D5200A840EE /* PopoverAnimator.swift in Sources */,
 				8B34BE991E6ED9CB001CCBD0 /* RJNavigationController.swift in Sources */,
 				8B34BEA11E6F9931001CCBD0 /* api.swift in Sources */,
