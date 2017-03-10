@@ -16,12 +16,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var defaultViewController : UIViewController? {
     
-      let oauth = RJNavigationController(rootViewController: OAuthViewController())
-       return oauth
+        let isLogin = UserAccountViewModel.shareInstance.isLogin
+        return isLogin ?  UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController() : RJNavigationController(rootViewController: OAuthViewController())
+
     }
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        
         
         setupQorumLogs()//设置打印
         setupGlobalStyle() // 设置全局样式
@@ -43,6 +43,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     //设置 全局样式
     fileprivate func setupGlobalStyle() {
         
+        UITabBar.appearance().tintColor = UIColor.orange
+        UINavigationBar.appearance().tintColor = UIColor.orange
         RJProgressHUD.setupHD()
     }
     

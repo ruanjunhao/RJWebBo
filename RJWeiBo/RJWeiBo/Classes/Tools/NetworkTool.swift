@@ -8,17 +8,19 @@
 
 import UIKit
 import Alamofire
-import SwiftyJSON
+//import SwiftyJSON
 
 
 
 //请求响应状态
-enum RJResponseStatus : Int {
-    case success = 0
-    case failure = 1
-}
+//enum RJResponseStatus : Int {
+//    case success = 0
+//    case failure = 1
+//}
 
-typealias NetworkFinished = (_ status : RJResponseStatus, _ result : JSON?,_ error : Error? ) -> ()
+//typealias NetworkFinished = (_ status : RJResponseStatus, _ result : JSON?,_ error : Error? ) -> ()
+
+typealias NetworkFinished = (_ result : AnyObject?,_ error : Error? ) -> ()
 
 
 class NetworkTools: NSObject {
@@ -50,6 +52,7 @@ extension NetworkTools {
      - parameter URLString:  urlString
      - parameter parameters: 参数
      - parameter finished:   完成回调
+     (_ result : JSON?,_ error : Error? ) -> ()
      */
     func post(_ APIString: String, parameters: [String : Any]?, finished: @escaping NetworkFinished) {
         
@@ -69,10 +72,10 @@ extension NetworkTools {
          UIApplication.shared.isNetworkActivityIndicatorVisible = false
         switch response.result {
         case .success(let value):
-            let json = JSON(value)
-            finished(.success, json, nil)
+            let json = value as AnyObject
+            finished(json, nil)
         case .failure(let error):
-            finished(.failure, nil, error)
+            finished(nil, error)
     }
     
     

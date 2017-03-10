@@ -1,0 +1,6 @@
+framework module Pods_RJWeiBo {
+  umbrella header "Pods-RJWeiBo-umbrella.h"
+
+  export *
+  module * { export * }
+}
